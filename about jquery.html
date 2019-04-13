@@ -1,0 +1,83 @@
+<html>
+    <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+</head>
+<title>Hello Developers Am A Designer</title>
+
+     <body>
+        <textarea id="txtArea"></textarea></br>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $("#boldit").click(function(){
+        $("#txtArea").css("fontWeight","bold");
+        });
+         });     
+        
+        
+        $(document).ready(function(){
+        $("#italicit").click(function(){
+        $("#txtArea").css("fontStyle","italic");
+        });
+         });
+         
+            $(document).ready(function(){
+            $("#underlineit").click(function(){
+            $("#txtArea").css("textDecoration","underline");
+            });
+             }); 
+             
+             $(document).ready(function(){ 
+             $("#fontlist").change(function() {
+             $("#txtArea").css("font-family", $(this).val());
+             });
+            });
+
+             $(document).ready(function(){ 
+             $("#siz").change(function() {
+             $("#txtArea").css("font-size", $(this).val());
+             });
+            });
+            
+            
+            </script>
+            <button type="button" id="boldit">Bold</button></br>
+            <button type="button" id="italicit">Italic</button></br>        
+            <button type="button" id="underlineit">Underline</button></br>
+
+            <select id="fontlist" onchange="myFunction(this);">
+                        <option value= "Georgia">Georgia</option>
+                        <option value="Palatino">Palatino</option> 
+                        <option value="Book">Antiqua</option>
+                        <option value="Times">New Roman</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Arial Black">Arial Black</option>
+                        <option value="Impact">Impact</option>
+                        <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                        <option value="Tahoma">Tahoma</opti ion>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Courier">Courier</option> 
+                        <option value="Lucida">Lucida</option> 
+                      </select> 
+
+
+         <select id="siz" onchange="taille(this);">
+                <option value ="10px">10px</option>
+                <option value ="9px">9px</option>
+                <option value ="8px">8px</option>
+                <option value ="7px">7px</option>
+                <option value ="6px">6px</option>
+                <option value ="5px">5px</option>
+                    </select> 
+
+
+          
+
+
+                
+        
+
+
+     </body>
+
+</html>
